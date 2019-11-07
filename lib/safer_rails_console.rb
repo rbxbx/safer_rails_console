@@ -31,7 +31,7 @@ module SaferRailsConsole
     include ActiveSupport::Configurable
 
     CONFIG_DEFAULTS = {
-        console: 'irb',
+        console: 'pry',
         environment_names: {
             'development' => 'dev',
             'staging' => 'staging',
