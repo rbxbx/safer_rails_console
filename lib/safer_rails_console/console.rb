@@ -13,7 +13,7 @@ module SaferRailsConsole
 
       def load_config
         root = $LOAD_PATH.grep(/safer_rails_console/).first
-        ARGV.push '-r', File.join(root, 'lib', 'safer_rails_console', 'consoles', "#{SaferRailsConsole.config.console}.rb")
+        ARGV.push '-r', File.join(root, 'safer_rails_console', 'consoles', "#{SaferRailsConsole.config.console}.rb")
       end
 
       def sandbox_user_prompt
